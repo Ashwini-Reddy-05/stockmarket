@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: white;
+}
+
+.header {
+    background: #16213e;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f4c75;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.stocks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.stock-card {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0f4c75;
+}
+
+.stock-card:hover {
+    border-color: #3282b8;
+}
+
+.stock-symbol {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3282b8;
+    margin-bottom: 5px;
+}
+
+.stock-name {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.stock-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stock-change {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.positive {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+}
+
+.negative {
+    background: rgba(255, 68, 68, 0.2);
+    color: #ff4444;
+}
+
+.stock-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #0f4c75;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.detail-label {
+    color: #888;
+}
